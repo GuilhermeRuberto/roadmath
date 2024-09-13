@@ -8,40 +8,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <select name="dificuldade" id="nivel">
-      <option value="facil">Fácil</option>
-      <option value="normal">Normal</option>
-      <option value="dificil">Dificil</option>
-    </select>
-    <select name="qtd_perguntas" id="qtdPerguntas">
-      <option value="10">10</option>
-      <option value="20">20</option>
-      <option value="30">30</option>
-    </select>
-  </header>
-
+  <div class="header">
+<div class="inner-header">
   <main>
-    <div>
+    <div id="select" class="conta-option">
+      <select name="dificuldade" id="nivel">
+        <option value="facil">Fácil</option>
+        <option value="normal">Normal</option>
+        <option value="dificil">Dificil</option>
+      </select>
+      <select name="qtd_perguntas" id="qtdPerguntas">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+    <div class="conta-option">
       <a onclick="exercicios('src/somaSub.html?')">soma & subtração</a>
     </div>
-    <div>
+    <div class="conta-option">
       <a onclick="exercicios('src/multDivisao.html?')">multiplicação & divisão</a>
     </div>
-    <div>
+    <div class="conta-option">
       <a href="src/numPri.html">números primos</a>
     </div>
-    <div>
+    <div class="conta-option">
       <a href="src/mmc">MMC</a>
     </div>
-    <div>
-      <a href=""></a>
-    </div>
-    <div>
-      <a href=""></a>
-    </div>
+    
   </main>
-
+</div>
+<!--Waves Container-->
+<div>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+  </svg>
+</div>
+</div>
+<!--Waves end-->
   <script src="./script.js"></script>
 </body>
 </html>
